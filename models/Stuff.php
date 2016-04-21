@@ -1,33 +1,38 @@
 <?php
 
 namespace models;
+
 use lib\Core;
 use PDO;
 
-class Stuff {
+class Stuff
+{
 
-	protected $core;
+    protected $core;
 
-	function __construct() {
-		//$this->core = \lib\Core::getInstance();
-	}
-	
-	// Get all stuff
-	public function getAllStuff() {
-		$r = array();		
+    function __construct()
+    {
+        //$this->core = \lib\Core::getInstance();
+    }
 
-		$sql = "SELECT * FROM stuff";
-		$stmt = $this->core->dbh->prepare($sql);		
+    // Get all stuff
+    public function getAllStuff()
+    {
+        $r = array();
 
-		if ($stmt->execute()) {
-			$r = $stmt->fetchAll(PDO::FETCH_ASSOC);		   	
-		} else {
-			$r = 0;
-		}		
-		return $r;
-	}
+        $sql = "SELECT * FROM stuff";
+        $stmt = $this->core->dbh->prepare($sql);
 
-    public function setStuff() {
+        if ($stmt->execute()) {
+            $r = $stmt->fetchAll(PDO::FETCH_ASSOC);
+        } else {
+            $r = 0;
+        }
+        return $r;
+    }
+
+    public function setStuff()
+    {
         return "hello world!!!";
     }
 }
