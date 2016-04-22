@@ -8,10 +8,10 @@ $twigView = new \Slim\Views\Twig();
 
 $app = new \Slim\Slim(array(
     'debug' => true,
-//    'view' => $twigView,
-//    'templates.path' => '../templates/',
+    'view' => $twigView,
+    'templates.path' => '../templates/',
 ));
-\Kint::dump($app);
+//\Kint::dump($app);
 // Automatically load router files
 $routers = glob('../routers/*.router.php');
 foreach ($routers as $router) {
