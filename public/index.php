@@ -6,16 +6,20 @@ require '../config.php';
 // Setup custom Twig view
 $twigView = new \Slim\Views\Twig();
 
-$app = new \Slim\Slim(array(
+$app = new \Slim\Slim([
     'debug' => true,
     'view' => $twigView,
     'templates.path' => '../templates/',
-));
-//\Kint::dump($app);
+        ]);
+
 // Automatically load router files
 $routers = glob('../routers/*.router.php');
 foreach ($routers as $router) {
     require $router;
 }
+
+$app->hook("slim.after.dispatch", function() use($app) {
+    \Kint::dump($app->environment());
+});
 
 $app->run();
