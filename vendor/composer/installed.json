@@ -10,7 +10,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/slimphp/Slim/20a02782f76830b67ae56a5c08eb1f563c351a37.zip",
+            "url": "https://api.github.com/repos/slimphp/Slim/zipball/20a02782f76830b67ae56a5c08eb1f563c351a37",
             "reference": "20a02782f76830b67ae56a5c08eb1f563c351a37",
             "shasum": ""
         },
@@ -58,7 +58,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/slimphp/Slim-Views/8561c785e55a39df6cb6f95c3aba3281a60ed5b0.zip",
+            "url": "https://api.github.com/repos/slimphp/Slim-Views/zipball/8561c785e55a39df6cb6f95c3aba3281a60ed5b0",
             "reference": "8561c785e55a39df6cb6f95c3aba3281a60ed5b0",
             "shasum": ""
         },
@@ -113,7 +113,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/twigphp/Twig/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8.zip",
+            "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
             "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
             "shasum": ""
         },
@@ -176,7 +176,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/raveren/kint/c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb.zip",
+            "url": "https://api.github.com/repos/raveren/kint/zipball/c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb",
             "reference": "c8423b9928bd35bf6ad14c688ab9c6d17d97d0eb",
             "shasum": ""
         },
@@ -229,7 +229,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/firephp/firephp-core/fabad0f2503f9577fe8dd2cb1d1c7cd73ed2aacf.zip",
+            "url": "https://api.github.com/repos/firephp/firephp-core/zipball/fabad0f2503f9577fe8dd2cb1d1c7cd73ed2aacf",
             "reference": "fabad0f2503f9577fe8dd2cb1d1c7cd73ed2aacf",
             "shasum": ""
         },
@@ -267,7 +267,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/php-fig/log/fe0936ee26643249e916849d48e3a51d5f5e278b.zip",
+            "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
             "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
             "shasum": ""
         },
@@ -307,7 +307,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/Seldaek/monolog/5f56ed5212dc509c8dc8caeba2715732abb32dbf.zip",
+            "url": "https://api.github.com/repos/Seldaek/monolog/zipball/5f56ed5212dc509c8dc8caeba2715732abb32dbf",
             "reference": "5f56ed5212dc509c8dc8caeba2715732abb32dbf",
             "shasum": ""
         },
@@ -387,7 +387,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/slimphp/Slim-Skeleton/35b18a0b6f1f79e7b992010e73ff5bde04f5fbcf.zip",
+            "url": "https://api.github.com/repos/slimphp/Slim-Skeleton/zipball/35b18a0b6f1f79e7b992010e73ff5bde04f5fbcf",
             "reference": "35b18a0b6f1f79e7b992010e73ff5bde04f5fbcf",
             "shasum": ""
         },
@@ -431,7 +431,7 @@
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/FaaPz/Slim-PDO/5f766ca63b8a8e45e7a27acaa3edadb1cf5e55a8.zip",
+            "url": "https://api.github.com/repos/FaaPz/Slim-PDO/zipball/5f766ca63b8a8e45e7a27acaa3edadb1cf5e55a8",
             "reference": "5f766ca63b8a8e45e7a27acaa3edadb1cf5e55a8",
             "shasum": ""
         },
@@ -466,6 +466,53 @@
             "framework",
             "pdo",
             "slim"
+        ]
+    },
+    {
+        "name": "jiaojie/slim-monolog-writer",
+        "version": "0.1.0",
+        "version_normalized": "0.1.0.0",
+        "target-dir": "Jiaojie/Slim",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/jiaojie1989/slim-monolog-writer.git",
+            "reference": "c2306ba6645a04c84bd34e8731f11b7fbdbf3cb2"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/jiaojie1989/slim-monolog-writer/zipball/c2306ba6645a04c84bd34e8731f11b7fbdbf3cb2",
+            "reference": "c2306ba6645a04c84bd34e8731f11b7fbdbf3cb2",
+            "shasum": ""
+        },
+        "require": {
+            "monolog/monolog": ">=1.6.0",
+            "php": ">=5.3.0",
+            "slim/slim": ">=2.3.0 <3.0.0"
+        },
+        "time": "2016-05-10 07:31:26",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Jiaojie\\Slim": "."
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "jiaojie",
+                "email": "thomasjiao@vip.qq.com"
+            }
+        ],
+        "description": "slim framework 2.x monolog writer",
+        "homepage": "http://github.com/jiaojie1989/slim-monolog-writer",
+        "keywords": [
+            "extensions",
+            "logging",
+            "middleware"
         ]
     }
 ]

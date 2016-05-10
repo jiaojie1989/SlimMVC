@@ -9,10 +9,18 @@ $app->get('/', function () use ($app) {
 
 $app->get('/hello/:user', function ($user) use ($app) {
     $app->render('index.html', array('hello' => "hello, $user"));
-});
+})->name("test");
 
-$app->get('/hello/:user/:word', function ($user, $word) use ($app) {
-    $a = a;
+
+
+$getRoute = function(\Slim\Route $route) use($app) {
+    \Kint::dump($route);
+    \Kint::dump($app->urlFor("test", ["user" => "world"]));
+};
+
+$app->get('/hello/:user/:word', $getRoute, function ($user, $word) use ($app) {
+//    $app->halt(403, 'You shall not pass!');
+    $a =b;
     $app->render('index.html', array('hello' => "hay, $word, $user"));
 });
 

@@ -18,7 +18,8 @@
         "raveren/kint": "1.0.10",
         "firephp/firephp-core": "v0.4.0",
         "slim/slim-skeleton": "2.1.2",
-        "slim/pdo": "1.9.8"
+        "slim/pdo": "1.9.8",
+        "jiaojie/slim-monolog-writer": "*"
     },
     "autoload": {
         "psr-0": {
