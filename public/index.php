@@ -18,7 +18,7 @@ $writer = new \Jiaojie\Slim\LogWriter\MonologWriter([
     ],
     "handlers" => [
         new \Monolog\Handler\FirePHPHandler(),
-        new \Monolog\Handler\StreamHandler(fopen("/tmp/test.log", "a+")),
+        new \Monolog\Handler\StreamHandler("/tmp/slim." . date("Y-m-d") . ".log"),
     ],
         ]);
 
@@ -28,7 +28,18 @@ $app = new \Slim\Slim([
     'templates.path' => '../templates/',
     'log.enabled' => true,
     'log.writer' => $writer,
-    'log.level' => \Slim\Log::DEBUG
+    'log.level' => \Slim\Log::DEBUG,
+    // Cookies
+    'cookies.encrypt' => true,
+    'cookies.lifetime' => '20 minutes',
+    'cookies.path' => '/',
+    'cookies.domain' => "jiaojie.me",
+    'cookies.secure' => true,
+    'cookies.httponly' => false,
+    // Encryption
+    'cookies.secret_key' => 'CHANGE_ME',
+    'cookies.cipher' => MCRYPT_RIJNDAEL_256,
+    'cookies.cipher_mode' => MCRYPT_MODE_CBC,
         ]);
 
 
@@ -40,7 +51,8 @@ foreach ($routers as $router) {
 }
 
 $app->hook("slim.after.dispatch", function() use($app) {
-    \Kint::dump($app->log);
+    \Kint::dump($app->flashData());
+
 //    $app->log->warn([12]);
 });
 
